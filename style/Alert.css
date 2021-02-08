@@ -1,0 +1,29 @@
+.Alert{
+	position: relative;
+	width: 100%;
+	height: auto;
+	color: #6d6c6c;
+
+	border-style: solid;
+	border-width: 0.1px 0px 0px 0px;
+	border-color: #d4d4d6;
+	
+	display: none;
+}
+
+.SubOption{
+	position: relative;
+
+	width: auto;
+	float: left;
+	padding: 10px;
+
+	align-items: center;
+    display: flex;
+	
+}
+
+.SubOption .Label{
+	margin: 6px;
+	float: left;
+}

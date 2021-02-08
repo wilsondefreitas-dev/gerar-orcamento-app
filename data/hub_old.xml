@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+
+	<!-- 
+
+		01 - SELEÇÃO DE AREAS
+
+	 -->
+
+	<section id="Selecionar Áreas">
+		
+		<question 
+			question="Para qual área deseja criar um novo orçamento?"
+			description="Selecione para qual área deseja criar um novo orçamento (campo obrigatório)."
+			typeInput="Radio" />
+
+		<button
+			name="Começar"
+			action="goNextDataFile" />
+
+		<options>
+
+			<option 
+				label="Soluções Educacionais"
+				description="Crie um novo orçamento para a área de Soluções Educacionais">
+
+				<value><![CDATA[solucoes-educacionais]]></value>
+
+				<!-- Referente a 1 hora -->
+				<effortPrice DE="159.00" WEB="143.00" PROJETOS="186.00"/>
+				
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Produto:">
+						
+						<choice label="Curso"></choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+			
+		</options>
+
+	</section>
+
+</root>

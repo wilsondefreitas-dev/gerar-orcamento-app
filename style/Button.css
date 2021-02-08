@@ -1,0 +1,15 @@
+.Button{
+	position: relative;
+	width: 50%;
+	height: auto;
+	float: left;
+	padding: 15px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+
+	border-style: solid;
+	border-width: 0px 0px 0px 0.1px;
+	border-color: rgb(14, 98, 152);
+}

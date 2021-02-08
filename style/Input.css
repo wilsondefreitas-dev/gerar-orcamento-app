@@ -1,0 +1,13 @@
+.InputContainer{
+	position: relative;
+	float: left;
+	width: 10%;
+	height: 100%;
+}
+
+.Radio, .Checkbox {
+	display: block;
+    margin : 0 auto;
+    width: 18px;
+    height: 18px;
+}

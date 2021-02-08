@@ -1,0 +1,110 @@
+.BottomBar{
+
+	position: fixed;
+
+	/*bottom: 0;*/
+
+	width: 100%;
+	height: auto;
+	z-index: 998;
+
+	box-shadow: 1px 1px 10px #404040;
+
+	background-color: #333333;
+
+}
+
+.Partials{
+
+	position: relative;
+
+	width: 1020px;
+	margin: auto;
+
+	height: 43px;
+
+	font-size: 16px;
+
+}
+
+.PartialsContent{
+
+	position: relative;
+
+	float: left;
+	height: 43px;
+
+	padding: 10px;
+	color: white;
+
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #222222;
+
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #222222;
+
+	cursor: default;
+
+}
+
+.PartialsContentInverted{
+
+	background-color: rgb(16, 121, 189);
+
+}
+
+.PartialLabelInverted{
+
+	color: white !important;
+
+}
+
+.PartialLabel{
+	color: #41d0fc;
+	float: left;
+	margin-right: 5px;
+	font-weight: bold;
+
+}
+
+.PartialValue{
+
+	float: left;
+	font-weight: bold;
+	position: relative;
+
+}
+
+.Progress{
+
+	position: relative;
+	height: auto;
+	width: 0%;
+
+	padding: 1px 3px;
+
+	/* background-color: rgb(220, 126, 14); */
+	background-color: #35bdb8;
+
+	font-size: 10px;
+
+	color: white;
+	text-align: right;
+
+}
+
+.ProgressBg{
+
+	position: relative;
+	height: auto;
+	width: 100%;
+
+	background-color: #d3e0df;
+
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #222222;
+
+}

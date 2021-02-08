@@ -1,0 +1,40 @@
+.MobileResult{
+
+	position: absolute; 
+	display: none;
+	width: 100%; 
+	height: 100%;
+	z-index: 997;
+	opacity: 0;
+	top: 0px;
+
+}
+
+
+.MobileResult > .MobileContainer{
+	
+	height: 250px;
+	position: relative;
+	width: 360px;
+	height: 220px;
+	margin: auto;
+
+	top: 50%;
+	margin-top: -140px;
+
+	text-align: center;
+
+	color: rgb(14, 98, 152);
+
+	font-size: 24px;
+	font-weight: bold;
+	
+}
+
+
+.MobileContainer > .Button{
+
+	margin-top: 30px;
+	width: 100%;
+
+}

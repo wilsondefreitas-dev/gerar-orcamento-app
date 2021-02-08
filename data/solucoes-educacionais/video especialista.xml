@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+
+<!-- 02 - CURSO DE SISTEMA -->
+
+	<section id="Dados do Cliente">
+		
+		<question 
+			question="Dados específicos do cliente"
+			description="Declarar os dados do cliente."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Cliente"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Nome"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Telefone"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="E-mail"
+				description="">
+			</option>
+			
+		</options>
+	
+	</section>
+	
+<!-- ENTENDIMENTO -->
+
+	<section id="Entendimento">
+		
+		<question 
+			question="Entendimento"
+			description="Complete os campos de texto."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Contexto e objetivo"
+				description="De onde surgiu a necessidade do treinamento e o que ele espera atingir">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Público-alvo"
+				description="Cargo que ocupa, escolaridade, nível de conhecimento sobre este tema, como é o ambiente de trabalho">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Tipo de entregável"
+				description="Declare o tipo de entregável que será enviado ao cliente. (Ex.: SCORM 1.2, SCORM 2004, etc)">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Onde será publicado o treinamento"
+				description="É um LMS? Qual? (SABA, Moodle, Success...)">
+			</option>
+
+			<!-- <option 
+				value="textArea"
+				label="Tempo estimado do curso"
+				description="Declare o tempo de duração estimado do treinamento">
+			</option> -->
+			
+		</options>
+	
+	</section>
+	
+<!-- DIREÇÃO DE ARTE -->
+
+	<section id="Direção de Arte">
+		
+		<question 
+			question="Direção de arte"
+			description="Como será a parte visual deste material?"
+			typeInput="Radio"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Sem Direção de Arte"
+				description="Não haverá criação de Direção de Arte. Power Point usado na apresentação é o mesmo que será inserido, sem nenhuma alteração.">
+
+				<value><![CDATA[Não haverá criação de Direção de Arte. Power Point usado na apresentação é o mesmo que será inserido, sem nenhuma alteração.]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Diagramação do Power Point apresentado"
+				description="Criação totalmente baseada no Manual do cliente, respeitando as cores, tipografia, enquadramentos fotográficos e todos os outros itens apresentados. Não será trabalhado conteúdo, apenas visual. Contempla até 25 slides.">
+
+				<value><![CDATA[Criação de uma nova direção de arte com base no Manual da Marca. Personagens utilizados serão de banco de imagens, não podendo sofrer qualquer tipo de alteração.]]></value>
+
+				<effort DE="8" WEB="16" PROJETOS="1" />
+
+			</option>
+			
+		</options>
+
+	</section>
+	
+<!-- CONTEÚDO -->
+
+	<section id="Conteúdo">
+		
+		<question 
+			question="Conteúdo"
+			description="Indique como o conteúdo será recebido."
+			typeInput="Radio" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="SB Pré Pronto"
+				description="Não há desenvolvimento de conteúdo neste caso. A SOU apenas captura o especialista da empresa falando e insere o PowerPoint apresentado.">
+
+				<value><![CDATA[<b>Material que deverá ser recebido pela SOU:</b><br><br>
+
+				Não há desenvolvimento de conteúdo neste caso. A SOU apenas captura o especialista da empresa falando e insere o PowerPoint apresentado.<br>
+
+				<b>Contempla:</b><br>
+				1 período presencial de gravação no escritório do cliente (ABC ou São Paulo até 200 km) ou no escritório da SOU.<br>
+				1 validação produzido com legenda.<br>
+				Entrega em MP4, a não ser que os itens de exercício, avaliação ou interatividade tenham sido contratados (ver texto abaixo).<br>
+				Legenda padrão SOU (estilo "cinema" com opção de cor branca, preta ou amarela.<br>
+
+				<b>Não contempla:</b><br>
+				Reunião presencial.<br>
+				Criação de conteúdo.<br>
+				Revisão didática do conteúdo.]]></value>
+
+				<effort DE="24" WEB="40" PROJETOS="8" />
+				<price price="250.00" />
+
+				<days days="10"/>
+
+			</option>
+
+		</options>
+	
+	</section>
+	
+<!-- PRODUÇÃO -->
+
+	<section id="Produção">
+		
+		<question 
+			question="Produção"
+			description="Selecione as opções sobre a ferramenta usada para desendolver o treinamento."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>	
+
+			<!-- Legenda -->
+			<option 
+				label="Legenda"
+				description="Legenda alternativa, customizada, uso de balões de fala ao invés de legenda">
+
+				<value><![CDATA[Criação de legenda customizada ou uso de balões de fala ao invés de legenda.]]></value>
+
+				<effort DE="8" WEB="16" PROJETOS="0"/>
+
+			</option>
+
+			<!-- SCORMIZAR MP4 -->
+			<option 
+				label="SCORMIZAR MP4"
+				description="">
+
+				<value><![CDATA[Vídeo será scormizado ao final.]]></value>
+
+				<effort DE="0" WEB="2" PROJETOS="0" />
+
+			</option>
+
+			<!-- Itens Avulsos -->
+			<option 
+				label="Itens Avulsos"
+				description="">
+
+				<value><![CDATA[Itens Avulsos]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Item 1:">
+						
+						<choice label="Teleprompter" value="1 diária de teleprompter com operador">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0"/>
+
+							<subprice price="1350.00"/>
+
+						</choice>
+
+						<choice label="Equipamentos extra para locais com má iluminação " value="1 diária de teleprompter com operador, iluminação, refletor, microfone extra.">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0"/>
+
+							<subprice price="2500.00"/>
+
+						</choice>
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Item 2:">
+
+						<choice label="Selecionar" value="">
+
+						</choice>
+						
+						<choice label="Teleprompter" value="1 diária de teleprompter com operador">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0"/>
+
+							<subprice price="1350.00"/>
+
+						</choice>
+
+						<choice label="Equipamentos extra para locais com má iluminação " value="1 diária de teleprompter com operador, iluminação, refletor, microfone extra.">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0"/>
+
+							<subprice price="2500.00"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+			
+			<!-- Vinheta -->
+			<option 
+				label="Vinheta"
+				description="">
+
+				<value><![CDATA[Vinheta]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Tipo:">
+						
+						<choice label="Enviada pelo cliente" value="Será inserida uma vinheta enviada pelo cliente.">
+							
+							<subeffort DE="0" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="Produzida internamente" value="A SOU irá desenvolver uma vinheta de até 10 segundos em animação computadorizada (sem captura de imagens ou criação de ilustrações, personagens, cenários, etc).">
+							
+							<subeffort DE="8" WEB="16" PROJETOS="0"/>
+
+							<subdays days="5"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+			
+			<!-- Exercícios -->
+			<option 
+				label="Exercícios"
+				description="Exercícios">
+
+				<value><![CDATA[Exercícios - <b>ATENÇÃO! Para que seja possível inserir exercícios e/ou avaliação no vídeo, ele não poderá ser entregue em MP4. A entrega final será em SCORM 1.2 ou WebApp. O vídeo não poderá ser enviado por e-mail ou WhatsApp, e deverá ser hospedado em um LMS ou ambiente do cliente (por exemplo SharePoint).</b>]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Exercícios:">
+						
+						<choice label="Nivel 1 (Akira e Storyline, exes do storyline, Rise)" value="Até 3 exercícios simples (multipla escolha, verdadeiro ou falso, selecione o correto).">
+							
+							<subeffort DE="8" WEB="8" PROJETOS="0"/>
+
+							<subdays days="5"/>
+
+						</choice>
+
+						<choice label="Nivel 2 (Akira lúdicos)" value="Até 4 exercícios complexos (ligue os pontos, caça palavras, jogo dos 7 erros).">
+							
+							<subeffort DE="12" WEB="16" PROJETOS="0"/>
+
+							<subdays days="5"/>
+
+						</choice>	
+
+						<choice label="Nivel 3 (Akira especiais)" value="Até 2 exercícios lúdicos especiais (envolvem criação de ilustrações, interações diferenciadas).">
+							
+							<subeffort DE="8" WEB="24" PROJETOS="1"/>
+
+							<subdays days="5"/>
+
+						</choice>
+
+						<choice label="Avaliação" value="Até 5 questões múltipla escolha, registrando nota no LMS.">
+							
+							<subeffort DE="8" WEB="8" PROJETOS="0"/>
+
+							<subdays days="5"/>
+
+						</choice>
+
+						<choice label="Avaliação randômica (mais de 10 questões)." value="Avaliação randômica (produção de 10 questões, das quais serão disponibilizadas apenas 5 para o usuário).">
+							
+							<subeffort DE="8" WEB="8" PROJETOS="0"/>
+
+							<subdays days="5"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+			
+			<!-- TRADUÇÃO DE TEXTOS NA TELA E LEGENDAS -->
+			<option 
+				label="Tradução de textos na tela e legendas"
+				description="">
+
+				<value><![CDATA[Tradução de textos na tela e legendas]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Enviada pelo cliente">
+						
+						<choice label="Tradução de textos da tela e legendas enviada pelo cliente" value="Tradução de textos da tela e legenda enviada pelo cliente.">
+							
+							<subeffort DE="16" WEB="32" PROJETOS="6"/>
+
+							<subdays days="10"/>
+
+						</choice>
+
+						<choice label="Feitas pela SOU (inglês OU espanhol)" value="Tradução de textos da tela e legendas para 1 idioma comum (inglês ou espanhol). (Não contempla tradução dos prints, a não ser que o item anterior tenha sido assinalado)">
+							
+							<subeffort DE="24" WEB="32" PROJETOS="6"/>
+
+							<subprice price="2000.00" />
+
+							<subdays days="10"/>
+
+						</choice>
+						
+						<choice label="Feitas pela SOU (idiomas alternativos: francês, italiano,e etc)" value="Tradução de textos da tela e legendas para 1 idioma alternativo (francês, italiano, etc). (Não contempla tradução dos prints, a não ser que o item anterior tenha sido assinalado))">
+							
+							<subeffort DE="24" WEB="32" PROJETOS="6"/>
+
+							<subprice price="3000.00" />
+
+							<subdays days="20"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>			
+			
+			<!-- Tradução de locução -->
+			<option 
+				label="Tradução de locução"
+				description="">
+
+				<value><![CDATA[Tradução de locução]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Idiomas simples (inglês ou espanhol):">
+
+						<choice label="Selecionar" value="">
+
+						</choice>
+						
+						<choice label="1 voz" value="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 1 voz">
+							
+							<subeffort DE="8" WEB="8" PROJETOS="6"/>
+
+							<subprice price="2500.00"/>
+
+							<subdays days="15"/>
+
+						</choice>
+
+						<choice label="2 vozes" value="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 2 vozes">
+							
+							<subeffort DE="9" WEB="8" PROJETOS="6"/>
+
+							<subprice price="3000.00"/>
+
+							<subdays days="15"/>
+
+						</choice>	
+
+						<choice label="3 vozes" value="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 3 vozes">
+							
+							<subeffort DE="10" WEB="8" PROJETOS="6"/>
+
+							<subprice price="3500.00"/>
+
+							<subdays days="15"/>
+
+						</choice>
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idiomas alternativos:">
+
+						<choice label="Selecionar" value="">
+
+						</choice>
+						
+						<choice label="1 voz" value="Locução dos áudios para 1 idioma alternativo (francês, italiano, outros) - 1 voz">
+							
+							<subeffort DE="8" WEB="8" PROJETOS="6"/>
+
+							<subprice price="3000.00"/>
+
+							<subdays days="20"/>
+
+						</choice>
+
+						<choice label="2 vozes" value="Locução dos áudios para 1 idioma alternativo (francês, italiano, outros) - 2 vozes">
+							
+							<subeffort DE="9" WEB="8" PROJETOS="6"/>
+
+							<subprice price="3500.00"/>
+
+							<subdays days="20"/>
+
+						</choice>	
+
+						<choice label="3 vozes" value="Locução dos áudios para 1 idioma alternativo (francês, italiano, outros) - 3 vozes">
+							
+							<subeffort DE="10" WEB="8" PROJETOS="6"/>
+
+							<subprice price="4000.00"/>
+
+							<subdays days="20"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>			
+			
+			<!-- Acessibilidade -->
+			<option 
+				label="Acessibilidade"
+				description="versão para pessoas com deficiência visual ou auditiva">
+
+				<value><![CDATA[Acessibilidade]]></value>
+
+				<!-- <effort DE="16" WEB="40" PROJETOS="0" /> -->
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Tipo:">
+						
+						<choice label="Acessibilidade (versão para pessoas com deficiência visual)" value="Versão acessível para pessoas com deficiência visual.Será iniciada apenas após a validação final do curso.Alguns conteúdos do curso podem sofrer alteração de funcionalidade para adaptação.">
+							
+							<subeffort DE="20" WEB="40" PROJETOS="3"/>
+
+							<subprice price="1000.00"/>
+
+							<subdays days="10"/>
+
+						</choice>
+
+						<choice label="Tradução Libras" value="Versão com tradução em Libras. Será iniciada apenas após a validação final do curso. Alguns conteúdos do curso podem sofrer alteração de funcionalidade para adaptação.">
+							
+							<subeffort DE="30" WEB="40" PROJETOS="3"/>
+
+							<subprice price="1000.00"/>
+
+							<subdays days="10"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>	
+		</options>	
+
+	</section>
+
+</root>

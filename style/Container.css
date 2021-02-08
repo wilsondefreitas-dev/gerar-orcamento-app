@@ -1,0 +1,7 @@
+.Container{
+	position: relative;
+	width: 880px;
+	height: auto;
+	margin: 0 auto 70px auto;
+	box-shadow: 1px 1px 10px #acadaf;
+}

@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+
+	<!-- 
+
+		02 - CURSO
+
+
+
+	 -->
+
+	<!-- <section id="Entendimento">
+		
+		<question 
+			question="Entendimento"
+			description="Complete os campos de texto."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Avançar"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Objetivo do treinamento"
+				description="Declare aqui o objetivo do treinamento">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Público-alvo"
+				description="Declare aqui o público-alvo">
+			</option>
+			
+		</options>
+		
+	</section> -->
+
+<!--  -->
+
+	<section id="Conteúdo">
+		
+		<question 
+			question="Conteúdo "
+			description="Selecione a opção de conteúdo."
+			typeInput="Radio" 
+		/> 
+
+		<button
+			name="Avançar"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				value="SB pré-pronto"
+				label="SB pré-pronto"
+				description="Declarar" >
+
+				<!-- em horas -->
+				<effort DE="2" WEB="1" PROJETOS="2" />
+				<!-- <price price="500.00" /> -->
+
+			</option>
+
+			<option 
+				value="Conteúdo consolidado"
+				label="Conteúdo consolidado"
+				description="Declarar" >
+
+				<effort DE="2" WEB="4" PROJETOS="2"/>
+				<!-- <price price="500.00" /> -->
+
+			</option>
+
+		</options>
+	</section>
+
+<!--  -->
+
+	<!-- <section id="Direção de Arte">
+		
+		<question 
+			question="Direção de arte"
+			description="Selecione a opção de Direção de arte."
+			typeInput="Radio"
+		/> 
+
+		<button
+			name="Avançar"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				value="Reutilizar a direção de arte de outro treinamento"
+				label="Reutilizar a direção de arte de outro treinamento"
+				description="Quando a criação já existe e será realizado apenas ajustes finos como: Diagramação e troca de textos." >
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<effort DE="2" WEB="2" PROJETOS="2" />
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<effort DE="2" WEB="2" PROJETOS="2" />
+							
+						</choice>				
+
+					</suboption>
+
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<effort DE="2" WEB="2" PROJETOS="2" />
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<effort DE="2" WEB="2" PROJETOS="2" />
+							
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				value="Criação de uma nova direção de arte com base no Manual da Marca"
+				label="Criação de uma nova direção de arte com base no Manual da Marca"
+				description="Criação totalmente baseada no Manual do cliente, respeitando as cores, tipografia, enquadramentos fotográficos e todos os outros itens apresentados." >
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subprice price="10.00"/>
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<subprice price="15.00"/> 
+							
+						</choice>				
+
+					</suboption>
+
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subprice price="100.00"/>
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<subprice price="200.00"/> 
+							
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				value="Criação de uma nova direção de arte sem o Manual da Marca"
+				label="Criação de uma nova direção de arte sem o Manual da Marca"
+				description="Criação livre, possibilitando outras combinações que fujam total ou parcialmente das já utilizadas pelo cliente." >
+
+				<effort DE="4" WEB="32" PROJETOS="1"/>
+
+			</option>
+
+		</options>
+	</section> -->
+
+<!--  -->
+
+	<section id="Fornecedores">
+		
+		<question 
+			question="Fornecedores "
+			description="Selecione a opções de fornecedor."
+			typeInput="Checkbox" 
+		/> 
+
+		<button
+			name="Avançar"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				value="Locutor"
+				label="Locutor"
+				description="Declarar">
+
+				<!-- <price price="100.00" /> -->
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subprice price="10.00"/>
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<subprice price="15.00"/> 
+							
+						</choice>				
+
+					</suboption>
+
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subprice price="100.00"/>
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<subprice price="200.00"/> 
+							
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				value="Locutor 1"
+				label="Locutor 1"
+				description="Declarar">
+
+				<!-- <price price="200.00" /> -->
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subprice price="10.00"/>
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<subprice price="15.00"/> 
+							
+						</choice>				
+
+					</suboption>
+
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subprice price="100.00"/>
+
+						</choice>
+
+						<choice label="ferramenta 2">
+							
+							<subprice price="200.00"/> 
+							
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+		</options>
+	</section>
+
+<!--  -->
+
+	<!-- <section id="Ferramenta">
+		
+		<question 
+			question="Ferramenta"
+			description="Selecione a opção de Ferramenta."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Avançar"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				value="Desenvolvimento na ferramenta de autoria do cliente/parceiro"
+				label="Desenvolvimento na ferramenta de autoria do cliente/parceiro"
+				description="caso sim, delimitar a ferramenta" >
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subeffort DE="2" WEB="2" PROJETOS="2"/>	
+
+						</choice>
+
+						<choice label="ferramenta 1">
+							
+							<subeffort DE="2" WEB="2" PROJETOS="2"/>	
+
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				value="O treinamento precisa ser responsivo"
+				label="O treinamento precisa ser responsivo"
+				description="" >
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subeffort DE="1" WEB="1" PROJETOS="1"/>	
+
+						</choice>
+
+						<choice label="ferramenta 1">
+							
+							<subeffort DE="1" WEB="1" PROJETOS="1"/>	
+
+						</choice>				
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Ferramenta:">
+						
+						<choice label="ferramenta 1">
+							
+							<subeffort DE="1" WEB="1" PROJETOS="1"/>	
+
+						</choice>
+
+						<choice label="ferramenta 1">
+							
+							<subeffort DE="1" WEB="1" PROJETOS="1"/>	
+
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+		</options>
+	</section> -->
+
+<!--  -->
+
+	<!-- <section id="Extras">
+		
+		<question 
+			question="Extras"
+			description="Selecione as opçãos de extras."
+			typeInput="Checkbox" 
+		/> 
+
+		<button
+			name="Avançar"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				value="Roteiro com árvore de decisão."
+				label="Roteiro com árvore de decisão."
+				description="Declarar" >
+
+				<effort DE="4" WEB="16" PROJETOS="1"/>
+
+			</option>
+
+			<option 
+				value="Imagens específicas."
+				label="Imagens específicas."
+				description="(compra em banco de imagem ou desenvolvimento de ilustração)." >
+
+				<effort DE="4" WEB="16" PROJETOS="1"/>
+
+			</option>
+
+			<option 
+				value="Exercício com case/lúdico."
+				label="Exercício com case/lúdico."
+				description="Declarar" >
+
+				<effort DE="4" WEB="16" PROJETOS="1"/>
+
+			</option>
+
+		</options>
+	</section> -->
+
+</root>

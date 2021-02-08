@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+
+<!-- 
+
+	02 - CURSO
+
+	-->
+
+	<section id="Dados do Cliente">
+		
+		<question 
+			question="Dados específicos do cliente"
+			description="Declarar os dados do cliente."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Cliente"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Nome"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Telefone"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="E-mail"
+				description="">
+			</option>
+			
+		</options>
+	
+	</section>
+
+<!--  -->
+
+	<section id="Entendimento">
+		
+		<question 
+			question="Entendimento"
+			description="Complete os campos de texto."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Contexto e objetivo"
+				description="De onde surgiu a necessidade do treinamento e o que ele espera atingir">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Público-alvo"
+				description="Cargo que ocupa, escolaridade, nível de conhecimento sobre este tema, como é o ambiente de trabalho">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Tipo de entregável"
+				description="Declare o tipo de entregável que será enviado ao cliente. (Ex.: SCORM 1.2, SCORM 2004, etc)">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Onde será publicado o treinamento"
+				description="É um LMS? Qual? (SABA, Moodle, Success...)">
+			</option>
+
+			<!-- <option 
+				value="textArea"
+				label="Ferramenta"
+				description="Selecione as opções sobre as ferramentas usadas para desenvolver o treinamento. (Ex.: Akira, Storyline, Captivate, etc)">
+			</option> -->
+
+			<option 
+				value="textArea"
+				label="Tempo estimado do curso"
+				description="Declare o tempo de duração estimado do treinamento">
+			</option>
+			
+		</options>
+	
+	</section>
+
+<!--  -->
+
+	<section id="Direção de Arte">
+		
+		<question 
+			question="Direção de arte"
+			description="Como será a parte visual deste material?"
+			typeInput="Radio"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Reutilizar a direção de arte de outro treinamento"
+				description="Cliente já realizou outros projetos com a SOU e usará a mesma Direção de Arte, sem alterações.">
+
+				<value><![CDATA[Reutilizar a direção de arte de outro treinamento]]></value>
+
+				<effort DE="4" WEB="8" PROJETOS="1" />
+
+			</option>
+
+			<option 
+				label="Criação de uma nova direção de arte com base no Manual da Marca"
+				description="Direção de arte “fora da caixinha”, criativa e com base no conteúdo do curso.">
+
+				<value><![CDATA[Criação de uma nova direção de arte com base no Manual da Marca]]></value>
+
+				<effort DE="4" WEB="16" PROJETOS="1" />
+
+			</option>
+
+			<option 
+				label="Criação de uma nova direção de arte sem o Manual da Marca"
+				description="Criação livre, possibilitando outras combinações que fujam total ou parcialmente das já utilizadas pelo cliente.">
+
+				<value><![CDATA[Criação de uma nova direção de arte sem o Manual da Marca]]></value>
+
+				<effort DE="4" WEB="32" PROJETOS="1" />
+
+			</option>
+
+		</options>
+
+	</section>
+
+<!--  -->
+
+	<section id="Conteúdo">
+		
+		<question 
+			question="Conteúdo "
+			description="Indique como o conteúdo será recebido."
+			typeInput="Radio" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="SB Pré Pronto"
+				description="Arquivo único com todo o conteúdo já validado, pronto para produção. Baixo esforço de Designer Educacional. Apresenta legendas ou textos em cada slide, imagens finais e/ou sugestão de imagens que devem ser utilizadas, exercícios e avaliação prontos." >
+
+				<value><![CDATA[<b>SB pré-pronto:</b> Material consolidado, arquivo único, conteúdo na ordem correta, conteúdo validado por todos os envolvidos, apresenta legendas ou comentários explicativos para cada slide, apresenta imagens finais e/ou sugestão de imagens para cada slide, Apresenta exercícios prontos, apresenta avaliação pronta ou sem necessidade de avaliação. <br><br> 
+
+				<b>Contempla:</b> Uma única validação de storyboard, revisão ortográfica, pequenos ajustes. <br><br> 
+
+				<b>Não Contempla:</b> Reunião presencial, Criação de exercícios/avaliação, Criação de conteúdo, Revisão didática do conteúdo, Criação de metáfora/personagem]]></value>
+
+				<effort DE="27" WEB="27" PROJETOS="4" />
+				<price price="250.00" />
+
+			</option>
+
+			<option 
+				label="Conteúdo Consolidado"
+				description="Arquivo único com todo o conteúdo já validado. Passará por revisão pedagógica para adequação para produção. Médio esforço de Designer Educacional. Apresenta sugestão de legendas ou textos em cada slide, sugestão de imagens que devem ser utilizadas, e sugestão de exercícios e avaliação.">
+
+				<value><![CDATA[<b>Conteúdo Consolidado:</b> Material consolidado, arquivo único, conteúdo com ordem sugerida, conteúdo validado por todos os envolvidos, sugestão de legendas ou comentários em cada slide, sugestão de exercícios e questões para avaliação. <br><br> 
+
+				<b>Contempla:</b> Até 1 reunião presencial, 2 validações de storyboard, revisão ortográfica, revisão didática do conteúdo, até 5 exercícios de fixação, avaliação de até 10 questões. <br><br> 
+
+				<b>Não Contempla:</b> Consolidação de conteúdo, criação de conteúdo.]]></value>
+
+				<effort DE="45" WEB="27" PROJETOS="4" />
+				<price price="400.00" />
+
+			</option>
+
+			<option 
+				label="Conteúdo Pulverizado ou Técnico"
+				description="Conteúdo em diversos arquivos e mídias, não organizado em ordem lógica OU conteúdo técnico. É o caso mais comum. Alto esforço de Designer Educacional. Inclui coleta de conteúdo e/ou estudo prévio do tema, pesquisa de termos/jargões específicos, linguagem técnica, entrevista com profissionais da área.">
+
+				<value><![CDATA[<b>Conteúdo Consolidado:</b> Diversos arquivos (pelo menos mais de um arquivo), assuntos pulverizados, fora de ordem, em diferentes arquivos e mídias, necessidade de coleta de conteúdo e/ou necessidade de estudo prévio do tema, termos/jargões específicos, linguagem técnica, necessidade de entrevista com profissionais da área.<br><br> 
+
+				<b>Contempla:</b> Até 3 reuniões presenciais, 1 validação de storyone/proposta pedagógica, 2 validações de storyboard, revisão ortográfica, revisão didática do conteúdo, até 5 exercícios de fixação, Avaliação de até 10 questões. <br><br> 
+
+				<b>Não Contempla:</b> Criação de conteúdo.]]></value>
+
+				<effort DE="78" WEB="27" PROJETOS="4" />
+				<price price="700.00" />
+
+			</option>
+
+			<option 
+				label="Criação de Conteúdo"
+				description="Não conteúdo base ou o conteúdo está extremamente pulverizado. Altíssimo esforço de Designer Educacional. Inclui desenvolvimento de conteúdo, pesquisa bibliográfica e/ou entrevista com especialistas para criação do conteúdo.">
+
+				<value><![CDATA[<b>Conteúdo Consolidado:</b> Não há conteúdo base/conteúdo extremamente pulverizado, necessidade de conteudista, necessidade de consulta bibliográfica, necessidade de entrevistas com diversos profissionais.<br><br> 
+
+				<b>Contempla:</b> Até 4 reuniões presenciais, 2 validações de storyone/proposta pedagógica, 2 validações de storyboard, revisão ortográfica, revisão didática do conteúdo, até 5 exercícios de fixação, avaliação de até 10 questões.]]></value>
+
+				<effort DE="132" WEB="27" PROJETOS="4" />
+				<price price="850.00" />
+
+			</option>
+
+		</options>
+	
+	</section>
+
+<!--  -->
+
+	<section id="Produção">
+		
+		<question 
+			question="Produção"
+			description="Selecione as opções sobre a ferramenta usada para desendolver o treinamento."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Exercícios"
+				description="">
+
+				<value><![CDATA[Exercícios]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Complexidade:">
+						
+						<choice label="Nivel 1 (Akira e Storyline)">
+							
+							<subeffort DE="1" WEB="4" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="Nivel 2 (Akira, não gamificados)">
+							
+							<subeffort DE="1" WEB="7" PROJETOS="0"/>
+
+						</choice>	
+
+						<choice label="Nivel 3 (Akira, gamificados)">
+							
+							<subeffort DE="1" WEB="11" PROJETOS="0"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				label="Sonorização / Locução"
+				description="">
+
+				<value><![CDATA[Sonorização / Locução]]></value>
+
+				<price price="1000.00" />
+
+			</option>
+
+			<option 
+				label="Material para download"
+				description="Material que será enviado pelo cliente para download. Exp.: Manual de conduta.">
+
+				<value><![CDATA[Material para download]]></value>
+
+				<effort DE="0" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Compra em banco de imagens"
+				description="">
+
+				<value><![CDATA[Compra em banco de imagens]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Metáfora/storytelling"
+				description="">
+
+				<value><![CDATA[Metáfora/storytelling]]></value>
+
+				<effort DE="8" WEB="16" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Avaliação randômica (mais de 10 questões)."
+				description="">
+
+				<value><![CDATA[Avaliação randômica (mais de 10 questões).]]></value>
+
+				<effort DE="4" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Acessibilidade"
+				description="versão para pessoas com deficiência visual ou auditiva">
+
+				<value><![CDATA[Acessibilidade]]></value>
+
+				<effort DE="16" WEB="24" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Certificado"
+				description="">
+
+				<value><![CDATA[Certificado]]></value>
+
+				<effort DE="0" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Roteiro com árvore de decisão"
+				description="">
+
+				<value><![CDATA[Roteiro com árvore de decisão]]></value>
+
+				<effort DE="16" WEB="16" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Simulador"
+				description="Navegação pelo sistema (tela animada, não pode ter maquiagem no sistema)">
+
+				<value><![CDATA[Simulador]]></value>
+
+				<effort DE="4" WEB="12" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Captura de Tela"
+				description="Print da tela do sistema (tela estática, pode ter maquiagem de informações)">
+
+				<value><![CDATA[Captura de Tela]]></value>
+
+				<effort DE="4" WEB="8" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Tradução"
+				description="">
+
+				<value><![CDATA[Tradução]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Idioma 1:">
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 2:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 3:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				label="Há necessidade de criar algo novo"
+				description="Se habilitar esse campo, o gerente deve ser consultado">
+
+				<value><![CDATA[Há necessidade de criar algo novo]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+		</options>
+
+	</section>
+
+<!-- -->
+
+	<!-- <section id="Produção">
+		
+		<question 
+			question="Produção"
+			description="Selecione as opções sobre a ferramenta usada para desendolver o treinamento."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Exercícios"
+				description="">
+
+				<value><![CDATA[Exercícios]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Complexidade:">
+						
+						<choice label="Nivel 1 (Akira e Storyline)">
+							
+							<subeffort DE="1" WEB="4" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="Nivel 2 (Akira, não gamificados)">
+							
+							<subeffort DE="1" WEB="7" PROJETOS="0"/>
+
+						</choice>	
+
+						<choice label="Nivel 3 (Akira, gamificados)">
+							
+							<subeffort DE="1" WEB="11" PROJETOS="0"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				label="Sonorização / Locução"
+				description="">
+
+				<value><![CDATA[Sonorização / Locução]]></value>
+
+				<price price="1000.00" />
+
+			</option>
+
+			<option 
+				label="Material para download"
+				description="Material que será enviado pelo cliente para download. Exp.: Manual de conduta.">
+
+				<value><![CDATA[Material para download]]></value>
+
+				<effort DE="0" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Compra em banco de imagens"
+				description="">
+
+				<value><![CDATA[Compra em banco de imagens]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Metáfora/storytelling"
+				description="">
+
+				<value><![CDATA[Metáfora/storytelling]]></value>
+
+				<effort DE="8" WEB="16" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Avaliação randômica (mais de 10 questões)."
+				description="">
+
+				<value><![CDATA[Avaliação randômica (mais de 10 questões).]]></value>
+
+				<effort DE="4" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Acessibilidade"
+				description="versão para pessoas com deficiência visual ou auditiva">
+
+				<value><![CDATA[Acessibilidade]]></value>
+
+				<effort DE="16" WEB="24" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Certificado"
+				description="">
+
+				<value><![CDATA[Certificado]]></value>
+
+				<effort DE="0" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Roteiro com árvore de decisão"
+				description="">
+
+				<value><![CDATA[Roteiro com árvore de decisão]]></value>
+
+				<effort DE="16" WEB="16" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Simulador"
+				description="Navegação pelo sistema (tela animada, não pode ter maquiagem no sistema)">
+
+				<value><![CDATA[Simulador]]></value>
+
+				<effort DE="4" WEB="12" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Captura de Tela"
+				description="Print da tela do sistema (tela estática, pode ter maquiagem de informações)">
+
+				<value><![CDATA[Captura de Tela]]></value>
+
+				<effort DE="4" WEB="8" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Tradução"
+				description="">
+
+				<value><![CDATA[Tradução]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Idioma 1:">
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 2:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 3:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				label="Há necessidade de criar algo novo"
+				description="Se habilitar esse campo, o gerente deve ser consultado">
+
+				<value><![CDATA[Há necessidade de criar algo novo]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+		</options>
+
+	</section> -->
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+	<!-- <section id="Teste">
+	
+		<question 
+			question="Teste"
+			description="Teste."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Concluir"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Teste"
+				description="">
+
+				<value><![CDATA[Teste]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Número de visitas:">
+						
+						<choice label="1 reuniões presenciais">
+							
+							<subprice price="100.00"/>
+							<subeffort DE="1" WEB="0" PROJETOS="0" />
+
+						</choice>
+
+						<choice label="2 reuniões presenciais">
+							
+							<subprice price="200.00"/>
+							<subeffort DE="1" WEB="0" PROJETOS="0" />
+
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+		</options>
+
+	</section>
+ -->
+
+</root>

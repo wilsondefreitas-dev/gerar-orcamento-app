@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: linear-gradient(#f7f7f7, #e8e8e8 98%);
+	background-size: 10px 10px;
+	margin: 0;
+}
+
+p{
+	margin: 0;
+}
+
+/*line-break*/
+
+
+/*font*/
+
+.BigFont{ 
+	font-size: 20px !important;
+}
+
+.MediumFont{ 
+	font-size: 18px !important; 
+}
+
+.SmallFont{ 
+	font-size: 14px !important; 
+	font-family: sans-serif;
+}
+
+.DarkColor{
+	background-color: rgb(16, 121, 189);
+}
+
+.DarkColorHover:hover{
+	background-color: rgb(14, 98, 152);
+}
+
+.MediumColor{
+	background-color: #DAEBFD;
+}
+
+.LightColor{
+	background-color: white;
+}
+
+.LightColorHover:hover{
+	 background-color: #f7f7f7;
+}

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+
+	<!-- 
+
+		01 - SELEÇÃO DE AREAS
+
+	 -->
+
+	<section id="Selecionar Áreas">
+		
+		<question 
+			question="Para qual área deseja criar um novo orçamento?"
+			description="Selecione a área desejada (campo obrigatório)."
+			typeInput="Radio" />
+
+		<button
+			name="Começar"
+			action="goNextDataFile" />
+
+		<options>
+
+			<option 
+				label="Soluções Educacionais"
+				description="">
+
+				<value><![CDATA[solucoes-educacionais]]></value>
+
+				<!-- Referente a 1 hora -->
+				<effortPrice DE="40.00" WEB="30.00" PROJETOS="50.00"/>
+				
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Produto:">
+						
+						<choice label="Curso"></choice>
+						<choice label="Curso de Sistema"></choice>
+						<choice label="Pool de horas"></choice>
+						<choice label="Video Animado"></choice>
+						<choice label="Video de Sistema"></choice>
+						<choice label="Video Especialista"></choice>
+						<choice label="Video Filmagem"></choice>
+						<choice label="Video Powtoon"></choice>
+						<choice label="Video Teaser"></choice>
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Duração:">
+						
+						<choice label="00h05"></choice>
+						<choice label="00h10"></choice>
+						<choice label="00h15"></choice>
+						<choice label="00h20"></choice>
+						<choice label="00h25"></choice>
+						<choice label="00h30"></choice>
+						<choice label="01h00"></choice>
+						<choice label="01h30"></choice>
+						<choice label="02h00"></choice>
+						<choice label="02h30"></choice>
+						<choice label="03h00"></choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+			
+		</options>
+
+	</section>
+
+</root>

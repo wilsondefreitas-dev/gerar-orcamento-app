@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+
+<!-- 02 - CURSO -->
+
+	<section id="Dados do Cliente">
+		
+		<question 
+			question="Dados específicos do cliente"
+			description="Declarar os dados do cliente."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Cliente"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Nome"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Telefone"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="E-mail"
+				description="">
+			</option>
+			
+		</options>
+	
+	</section>
+	
+<!-- ENTENDIMENTO -->
+
+	<section id="Entendimento">
+		
+		<question 
+			question="Entendimento"
+			description="Complete os campos de texto."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Contexto e objetivo"
+				description="De onde surgiu a necessidade do treinamento e o que ele espera atingir">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Público-alvo"
+				description="Cargo que ocupa, escolaridade, nível de conhecimento sobre este tema, como é o ambiente de trabalho">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Tipo de entregável"
+				description="Declare o tipo de entregável que será enviado ao cliente. (Ex.: SCORM 1.2, SCORM 2004, etc)">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Onde será publicado o treinamento"
+				description="É um LMS? Qual? (SABA, Moodle, Success...)">
+			</option>
+
+			<!-- <option 
+				value="textArea"
+				label="Tempo estimado do curso"
+				description="Declare o tempo de duração estimado do treinamento">
+			</option> -->
+			
+		</options>
+	
+	</section>
+	
+<!-- PRODUÇÃO -->
+
+	<section id="Produção">
+		
+		<question 
+			question="Produção"
+			description="Selecione as opções sobre a ferramenta usada para desendolver o treinamento."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<!-- Profissionais -->
+			<option 
+				label="Profissionais"
+				description="Selecione quantas horas serão contratadas de cada profissional.">
+
+				<value><![CDATA[Os profissionais contratados estarão disponíveis full time pelo período mínimo da duração indicada nesta proposta. Após este prazo, não é possível garantir a disponibilidade integral dos profissionais.<br><br>Caso as horas contratadas não sejam utilizadas no período do dobro do prazo mínimo, elas serão congeladas e não estarão mais disponíveis. O descongelamento pode ser negociado via proposta comercial.<br><br>A prioridade dos materiais a serem entregues deve ser definida pelo cliente.<br>Caso sejam necessários ajustes após a validação, o cliente deve definir se estes devem interromper ou não a produção de novos conteúdos.<br><br>Serão enviados relatórios às sextas-feiras indicando consumo de horas do projeto e horas disponíveis.<br><br>A equipe dedicada poderá produzir e-learnings, rapid learnings, vídeos animados, pílulas, PDFs, infográficos e imagens em JPEG ou PNG. Outros conteúdos não estão contemplados nesta proposta (como aplicativos, vídeos gravados, imagens 3D, dentre outros).<br><br>A locução só está contemplada caso seja selecionada na proposta.<br><br>Os profissionais estarão alocados na SOU das 9h às 18h, de segunda a sexta-feira, exceto feriados nacionais, estaduais e municipais. Qualquer trabalho que exija atuação fora do horário comercial será avaliado e, caso haja disponibilidade, será cobrada hora extra dos profissionais.]]></value>
+
+				<suboptions>
+
+					<!-- DE -->
+					<suboption 
+						type="Select"
+						label="DE:">
+
+						<choice label="Selecionar">
+
+						</choice>
+						
+						<choice label="40 horas de Designer Educacional">
+							
+							<subeffort DE="40" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="80 horas de Designer Educacional">
+							
+							<subeffort DE="80" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="120 horas de Designer Educacional">
+							
+							<subeffort DE="120" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="160 horas de Designer Educacional">
+							
+							<subeffort DE="160" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="200 horas de Designer Educacional">
+							
+							<subeffort DE="200" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="240 horas de Designer Educacional">
+							
+							<subeffort DE="240" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="280 horas de Designer Educacional">
+							
+							<subeffort DE="280" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="320 horas de Designer Educacional">
+							
+							<subeffort DE="320" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="360 horas de Designer Educacional">
+							
+							<subeffort DE="360" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="400 horas de Designer Educacional">
+							
+							<subeffort DE="400" WEB="0" PROJETOS="0"/>
+
+						</choice>
+
+					</suboption>
+					
+					<!-- Web -->
+					<suboption 
+						type="Select"
+						label="Web:">
+
+						<choice label="Selecionar">
+
+						</choice>
+						
+						<choice label="40 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="40" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="80 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="80" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="120 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="120" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="160 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="160" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="200 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="200" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="240 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="240" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="280 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="280" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="320 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="320" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="360 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="360" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="400 horas de Web Designer">
+							
+							<subeffort DE="0" WEB="400" PROJETOS="0"/>
+
+						</choice>
+
+					</suboption>
+
+					<!-- Projetos -->
+					<suboption 
+						type="Select"
+						label="Projetos:">
+
+						<choice label="Selecionar">
+
+						</choice>
+						
+						<choice label="8 horas de Projetos">
+							
+							<subeffort DE="0" WEB="0" PROJETOS="8"/>
+
+						</choice>
+
+						<choice label="16 horas de Projetos">
+							
+							<subeffort DE="0" WEB="0" PROJETOS="16"/>
+
+						</choice>
+
+						<choice label="24 horas de Projetos">
+							
+							<subeffort DE="0" WEB="0" PROJETOS="24"/>
+
+						</choice>
+
+						<choice label="32 horas de Projetos">
+							
+							<subeffort DE="0" WEB="0" PROJETOS="32"/>
+
+						</choice>
+
+						<choice label="40 horas de Projetos">
+							
+							<subeffort DE="0" WEB="0" PROJETOS="40"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<!-- Locução -->
+			<option 
+				label="Locução"
+				description="Selecione o tempo de locução">
+
+				<value><![CDATA[Locução:]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Tempo:">
+						
+						<choice label="10 minutos" value="Contratação de 10 minutos de locução em Português.">
+							
+							<subprice price="1500.00" />
+
+						</choice>
+
+						<choice label="30 minutos" value="Contratação de 30 minutos de locução em Português.">
+
+							<subprice price="3300.00" />
+
+						</choice>	
+
+						<choice label="60 minutos" value="Contratação de 60 minutos de locução em Português.">
+
+							<subprice price="4800.00" />
+
+						</choice>
+
+						<choice label="90 minutos" value="Contratação de 90 minutos de locução em Português.">
+							
+							<subprice price="6300.00" />
+
+						</choice>
+
+						<choice label="120 minutos" value="Contratação de 120 minutos de locução em Português.">
+
+							<subprice price="8400.00" />
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+		</options>
+
+	</section>
+
+</root>

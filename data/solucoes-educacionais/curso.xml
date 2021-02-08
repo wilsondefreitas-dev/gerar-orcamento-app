@@ -1,0 +1,1464 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+
+<!-- 02 - CURSO -->
+
+	<section id="Dados do Cliente">
+		
+		<question 
+			question="Dados específicos do cliente"
+			description="Declarar os dados do cliente."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Cliente"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Nome"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Telefone"
+				description="">
+			</option>
+
+			<option 
+				value="textArea"
+				label="E-mail"
+				description="">
+			</option>
+			
+		</options>
+	
+	</section>
+	
+<!-- ENTENDIMENTO -->
+
+	<section id="Entendimento">
+		
+		<question 
+			question="Entendimento"
+			description="Complete os campos de texto."
+			typeInput="TextArea" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="saveTextArea"
+		/>
+
+		<options>
+
+			<option 
+				value="textArea"
+				label="Contexto e objetivo"
+				description="De onde surgiu a necessidade do treinamento e o que ele espera atingir">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Público-alvo"
+				description="Cargo que ocupa, escolaridade, nível de conhecimento sobre este tema, como é o ambiente de trabalho">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Tipo de entregável"
+				description="Declare o tipo de entregável que será enviado ao cliente. (Ex.: SCORM 1.2, SCORM 2004, etc)">
+			</option>
+
+			<option 
+				value="textArea"
+				label="Onde será publicado o treinamento"
+				description="É um LMS? Qual? (SABA, Moodle, Success...)">
+			</option>
+
+			<!-- <option 
+				value="textArea"
+				label="Tempo estimado do curso"
+				description="Declare o tempo de duração estimado do treinamento">
+			</option> -->
+			
+		</options>
+	
+	</section>
+	
+<!-- DIREÇÃO DE ARTE -->
+
+	<section id="Direção de Arte">
+		
+		<question 
+			question="Direção de arte"
+			description="Como será a parte visual deste material?"
+			typeInput="Radio"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Reutilizar a direção de arte de outro treinamento"
+				description="Quando a criação já existe e será realizado apenas ajustes finos como: Diagramação e troca de textos.">
+
+				<value><![CDATA[Reutilização de uma direção de arte de outro treinamento criado pela SOU.<br>Apresentação de até 8 telas para validação, com 2 rodadas de ajuste.]]></value>
+
+				<effort DE="1" WEB="6" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Criação de uma nova direção de arte com base no Manual da Marca"
+				description="Criação totalmente baseada no Manual do cliente, respeitando as cores, tipografia, enquadramentos fotográficos e todos os outros itens apresentados.">
+
+				<value><![CDATA[Criação de uma nova direção de arte com base no Manual da Marca.<br>Apresentação de até 8 telas para validação, com 2 rodadas de ajuste.]]></value>
+
+				<effort DE="1" WEB="10" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Criação de uma nova direção de arte sem o Manual da Marca"
+				description="Criação livre, possibilitando outras combinações que fujam total ou parcialmente das já utilizadas pelo cliente.">
+
+				<value><![CDATA[Criação de uma nova direção de arte criativa, sem ter o Manual da Marca como base.<br>Apresentação de até 8 telas para validação, com 2 rodadas de ajuste.]]></value>
+
+				<effort DE="2" WEB="16" PROJETOS="0" />
+
+				<days days="1"/>
+
+			</option>
+
+		</options>
+
+	</section>
+	
+<!-- CONEÚDO -->
+
+	<section id="Conteúdo">
+		
+		<question 
+			question="Conteúdo"
+			description="Indique como o conteúdo será recebido."
+			typeInput="Radio" 
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="SB Pré Pronto"
+				description="Material consolidado. Arquivo único. Conteúdo na ordem correta. Conteúdo validado por todos os envolvidos. Apresenta legendas ou comentários explicativos para cada slide. Apresenta imagens finais e/ou sugestão de imagens para cada slide." >
+
+				<value><![CDATA[<b>SB pré-pronto:</b><br>
+				<b>Material que deverá ser recebido pela SOU:</b><br>
+				Material consolidado.<br>
+				Arquivo único.<br>
+				Conteúdo na ordem correta.<br>
+				Conteúdo validado por todos os envolvidos.<br>
+				Apresenta legendas ou comentários explicativos para cada slide.<br>
+				Apresenta imagens finais e/ou sugestão de imagens para cada slide.<br><br>
+
+				Todos os conteúdos recebidos deverão estar em Português, caso contrário será realizada cotação para tradução dos materiais.<br><br>
+
+
+				<b>Contempla:</b><br>
+				Uma única validação de storyboard (para adequação do formato à produção da SOU).<br>
+				Revisão ortográfica.<br>
+				Pequenos ajustes.<br>
+				2 validações de curso produzido.<br><br>
+
+				<b>Não contempla:</b><br>
+				Reunião presencial.<br>
+				Criação de conteúdo.<br>
+				Revisão didática do conteúdo.<br>
+				Inserção, correção, alteração de conteúdo.<br>
+				Itens adicionados na proposta (como personagem, metáfora, cenários, mecanicas de game, dentre outros, só serão produzidos caso já estejam contemplados no roteiro recebido).<br><br>
+
+				O curso pode ser aberto em computadores, celulares e tablets, porém não é reponsivo.]]></value>
+
+				<effort DE="40" WEB="40" PROJETOS="5" />
+				<price price="200.00" />
+
+				<days days="20"/>
+
+			</option>
+
+			<option 
+				label="Conteúdo Consolidado"
+				description="Material consolidado. Arquivo único. Conteúdo com ordem sugerida. Conteúdo validado por todos os envolvidos. Sugestão de legendas ou comentários em cada slide. Sugestão de exercícios e questões para avaliação. Exemplo: código de conduta, NR">
+
+				<value><![CDATA[<b>Conteúdo Consolidado:</b><br>
+				<b>Material que deverá ser recebido pela SOU:</b><br>
+				Material consolidado.<br>
+				Arquivo único.<br>
+				Conteúdo com ordem sugerida.<br>
+				Conteúdo validado por todos os envolvidos.<br>
+				Sugestão de legendas ou comentários em cada slide.<br>
+				Sugestão de exercícios e questões para avaliação.<br>
+				Todos os conteúdos recebidos deverão estar em Português, caso contrário será realizada cotação para tradução dos materiais.<br><br>
+
+				<b>Contempla:</b><br>
+				Até 1 reunião presencial (ABC e São Paulo capital).<br>
+				2 validações de storyboard.<br>
+				Revisão ortográfica.<br>
+				Revisão didática do conteúdo.<br>
+				2 validações de curso produzido.<br><br>
+
+				<b>Não contempla:</b><br>
+				Consolidação de conteúdo.<br>
+				Criação de conteúdo.<br><br>
+
+				O curso pode ser aberto em computadores, celulares e tablets, porém não é reponsivo.]]></value>
+
+				<effort DE="60" WEB="40" PROJETOS="6" />
+				<price price="400.00" />
+
+				<days days="25"/>
+
+			</option>
+
+			<option 
+				label="Conteúdo Pulverizado ou Técnico"
+				description="Diversos arquivos (pelo menos mais de um arquivo). Assuntos pulverizados, fora de ordem, em diferentes arquivos e mídias. Necessidade de coleta de conteúdo e/ou necessidade de estudo prévio do tema. Termos/jargões específicos, linguagem técnica. Necessidade de entrevista com profissionais da área.">
+
+				<value><![CDATA[<b>Conteúdo Consolidado:</b><br>
+				<b>Material que deverá ser recebido pela SOU:</b><br>
+				Diversos arquivos (pelo menos mais de um arquivo).<br>
+				Assuntos pulverizados, fora de ordem, em diferentes arquivos e mídias.<br>
+				Necessidade de coleta de conteúdo e/ou necessidade de estudo prévio do tema.<br>
+				Termos/jargões específicos, linguagem técnica.<br>
+				Necessidade de entrevista com profissionais da área.<br><br>
+
+				Todos os conteúdos recebidos deverão estar em Português, caso contrário será realizada cotação para tradução dos materiais.<br><br>
+
+				<b>Contempla:</b><br>
+				Até 1 reunião presencial (ABC e São Paulo capital).<br>
+				1 validação de storyone/proposta pedagógica.<br>
+				2 validações de storyboard.<br>
+				Revisão ortográfica.<br>
+				Revisão didática do conteúdo.<br>
+				2 validações de curso produzido.<br><br>
+
+				<b>Não contempla:</b><br>
+				Criação de conteúdo.<br><br>
+
+				O curso pode ser aberto em computadores, celulares e tablets, porém não é reponsivo.]]></value>
+
+				<effort DE="80" WEB="40" PROJETOS="6" />
+				<price price="400.00" />
+
+				<days days="30"/>
+
+			</option>
+
+			<option 
+				label="Criação de Conteúdo"
+				description="Não há conteúdo base/conteúdo extremamente pulverizado. Necessidade de conteudista. Necessidade de consulta bibliográfica. Necessidade de entrevistas com diversos profissionais.">
+
+				<value><![CDATA[<b>Criação de Conteúdo:</b><br>
+				<b>Material que deverá ser recebido pela SOU:</b><br>
+				Não há conteúdo base/conteúdo extremamente pulverizado.<br>
+				Necessidade de conteudista.<br>
+				Necessidade de consulta bibliográfica.<br>
+				Necessidade de entrevistas com diversos profissionais.<br>
+				Todos os conteúdos recebidos deverão estar em Português, caso contrário será realizada cotação para tradução dos materiais.<br><br>
+
+				<b>Contempla:</b><br>
+				Até 1 reunião presencial (ABC e São Paulo capital).<br>
+				2 validações de storyone/proposta pedagógica.<br>
+				3 validações de storyboard.<br>
+				Revisão ortográfica.<br>
+				Revisão didática do conteúdo.<br>
+				2 validações de curso produzido.<br><br>
+
+				O curso pode ser aberto em computadores, celulares e tablets, porém não é reponsivo.]]></value>
+
+				<effort DE="120" WEB="40" PROJETOS="6" />
+				<price price="400.00" />
+
+				<days days="40"/>
+
+			</option>
+
+		</options>
+	
+	</section>
+	
+<!-- PRODUÇÃO -->
+
+	<section id="Produção">
+		
+		<question 
+			question="Produção"
+			description="Selecione as opções sobre a ferramenta usada para desendolver o treinamento."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<!-- Acessibilidade -->
+			<option 
+				label="Acessibilidade"
+				description="versão para pessoas com deficiência visual ou auditiva">
+
+				<value><![CDATA[Acessibilidade]]></value>
+
+				<!-- <effort DE="16" WEB="40" PROJETOS="0" /> -->
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Tipo:">
+						
+						<choice label="Acessibilidade (versão para pessoas com deficiência visual)" value="Será iniciada apenas após a validação final do curso. Alguns conteúdos do curso podem sofrer alteração de funcionalidade para adaptação. Entrega em SCORM 1.2.">
+							
+							<subeffort DE="24" WEB="24" PROJETOS="2"/>
+
+							<subprice price="1000"/>
+
+							<subdays days="10"/>
+
+						</choice>
+
+						<choice label="Tradução Libras" value="Será iniciada apenas após a validação final do curso. Alguns conteúdos do curso podem sofrer alteração de funcionalidade para adaptação. Entrega em SCORM 1.2.">
+							
+							<subeffort DE="30" WEB="24" PROJETOS="2"/>
+
+							<subprice price="1000"/>
+
+							<subdays days="10"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>		
+
+			<!-- Avaliação -->
+			<option 
+				label="Avaliação"
+				description="">
+
+				<value><![CDATA[Avaliação]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Tipo:">
+						
+						<choice label="Avaliação Padrão" value="Até 10 questões múltipla escolha, registrando nota no LMS">
+							
+							<subeffort DE="8" WEB="4" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="Avaliação Randômica" value="Criação de 20 questões, sendo 10 disponibilizadas aleatoriamente para o usuário,registrando nota no LMS">
+							
+							<subeffort DE="10" WEB="6" PROJETOS="0"/>
+
+							<subdays days="2"/>
+
+						</choice>	
+
+						<choice label="Avaliação Por Exercícios" value="Criação de até 5 exercícios a escolher, que servem como nota final no LMS.">
+							
+							<subeffort DE="12" WEB="12" PROJETOS="0"/>
+
+							<subdays days="2"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<!-- Compra em banco de imagens -->
+			<option 
+				label="Compra em banco de imagens"
+				description="Se for necesário usar imagens específicas (conteúdo médico, teórico específico) e o cliente não tiver banco de imagens, este item é recomendado.">
+
+				<value><![CDATA[Compra de até 25 imagens em banco de imagem (deverão ser previamente aprovadas pelo cliente).]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+				<price price="1300.00" />
+
+			</option>
+
+			<!-- Certificado -->
+			<option 
+				label="Certificado"
+				description="Emissão de certificado de conclusão do curso.">
+
+				<value><![CDATA[Emissão de certificado no formato PDF, que poderá ser baixado pelo usuário. Direção de Arte seguiará a mesma indicada anteriormente.]]></value>
+
+				<effort DE="0" WEB="4" PROJETOS="0" />
+
+			</option>
+
+			<!-- Exercícios -->
+			<option 
+				label="Exercícios"
+				description="Exercícios não registram nota no LMS.">
+
+				<value><![CDATA[Exercícios]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Complexidade:">
+						
+						<choice label="Nível 1 - Simples" value="Até 5 exercícios simples (multipla escolha, verdadeiro ou falso, selecione o correto). Exercícios não registram nota no LMS.">
+							
+							<subeffort DE="8" WEB="6" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="Nível 2 - Lúdicos" value="Até 3 exercícios complexos (ligue os pontos, caça palavras, jogo dos 7 erros). Exercícios não registram nota no LMS.">
+							
+							<subeffort DE="8" WEB="12" PROJETOS="0"/>
+
+							<subdays days="2"/>
+
+						</choice>	
+
+						<choice label="Nível 3 - Especiais" value="Até 3 exercícios lúdicos especiais (envolvem criação de ilustrações simples, interações diferenciadas, estilo Mario). Exercícios não registram nota no LMS.">
+							
+							<subeffort DE="12" WEB="12" PROJETOS="0"/>
+
+							<subdays days="4"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<!-- Metáfora/storytelling -->
+			<option 
+				label="Metáfora/storytelling"
+				description="Curso com história (exemplo: Talk Show, Jornal, Viagem, Grupo de Estudos, etc).">
+
+				<value><![CDATA[Curso com metáfora ou storytelling apresentado para validação no Storyone. Poderão ser apresentadas até 3 propostas. Após a primeira seleção, é possível 1 rodada de ajuste na metáfora/storytelling selecionado.]]></value>
+
+				<effort DE="24" WEB="6" PROJETOS="1" />
+
+				<days days="10"/>
+
+			</option>
+			
+			<!-- Material para download -->
+			<option 
+				label="Material para download"
+				description="Material que será enviado pelo cliente para download. Exp.: Manual de conduta.">
+
+				<value><![CDATA[O cliente enviará um material para download. Não será produzido nenhum material para download pela SOU, nem será possível baixar o treinamento.]]></value>
+
+				<effort DE="0" WEB="1" PROJETOS="0" />
+
+			</option>
+			
+			<!-- Roteiro com árvore de decisão -->
+			<option 
+				label="Roteiro com árvore de decisão"
+				description="Serão 3 momentos de escolha que levarão o usuário a diferentes conteúdos, totalizando 9 caminhos e 4 telas diferentes no final.">
+
+				<value><![CDATA[Roteiro com árvore de decisão, sendo 3 momentos de escolha que levam a 9 caminhos e 4 telas diferentes no final. Atenção: o tempo total de experiência do usuário poderá não ser o total contratado. Este recurso é indicado apenas para games ou cursos livres, pois há o risco de o usuário não acessar todos os conteúdos disponibilizados.]]></value>
+
+				<effort DE="32" WEB="32" PROJETOS="2" />
+
+				<days days="15"/>
+
+			</option>
+			
+			<!-- Locução -->
+			<option 
+				label="Locução"
+				description="">
+
+				<value><![CDATA[Locução]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Vozes:">
+						
+						<choice label="1 voz" value="Locução de até 30 minutos: 1 voz">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="1"/>
+							<subprice price="1000.00" />
+
+							<subdays days="7"/>
+
+						</choice>
+
+						<choice label="2 vozes" value="Locução de até 30 minutos: 2 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="1"/>
+							<subprice price="1300.00" />
+
+							<subdays days="7"/>
+
+						</choice>	
+
+						<choice label="3 vozes" value="Locução de até 30 minutos: 3 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="1"/>
+							<subprice price="1600.00" />
+
+							<subdays days="7"/>
+
+						</choice>
+
+						<choice label="4 vozes" value="Locução de até 30 minutos: 4 voz">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="1"/>
+							<subprice price="1800.00" />
+
+							<subdays days="10"/>
+
+						</choice>
+
+						<choice label="5 vozes" value="Locução de até 30 minutos: 5 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="1"/>
+							<subprice price="2000.00" />
+
+							<subdays days="10"/>
+
+						</choice>	
+
+						<choice label="6 vozes" value="Locução de até 30 minutos: 6 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="1"/>
+							<subprice price="2200.00" />
+
+							<subdays days="10"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>			
+			
+			<!-- Personagem -->
+			<option 
+				label="Personagem"
+				description="Criação de personagem customizado">
+
+				<value><![CDATA[Personagem]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Número:">
+						
+						<choice label="1 personagem" value='Criação de 1 personagem, com 2 validações e 2 rodadas de ajuste.'>
+							
+							<subeffort DE="8" WEB="18" PROJETOS="1"/>
+
+							<subdays days="7"/>
+
+						</choice>
+
+						<choice label="2 personagens" value='Criação de até 2 personagens, com 2 validações e 2 rodadas de ajuste. '>
+							
+							<subeffort DE="8" WEB="24" PROJETOS="1"/>
+
+							<subdays days="8"/>
+
+						</choice>	
+
+						<choice label="3 personagens" value='Criação de até 3 personagens, com 2 validações e 2 rodadas de ajuste. '>
+							
+							<subeffort DE="8" WEB="28" PROJETOS="1"/>
+
+							<subdays days="10"/>
+
+						</choice>
+
+						<choice label="4 personagens" value='Criação de até 4 personagens, com 2 validações e 2 rodadas de ajuste.'>
+							
+							<subeffort DE="8" WEB="32" PROJETOS="1"/>
+
+							<subdays days="11"/>
+
+						</choice>
+
+						<choice label="5 personagens" value='Criação deaté 5 personagens, com 2 validações e 2 rodadas de ajuste. '>
+							
+							<subeffort DE="8" WEB="38" PROJETOS="1"/>
+
+							<subdays days="13"/>
+
+						</choice>	
+
+						<choice label="6 personagens" value='Criação de até 6  personagens, com 2 validações e 2 rodadas de ajuste.'>
+							
+							<subeffort DE="8" WEB="44" PROJETOS="2"/>
+
+							<subdays days="14"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>			
+			
+			<!-- Cenário -->
+			<option 
+				label="Cenário"
+				description="Criação de cenários customizados">
+
+				<value><![CDATA[Cenário]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Número:">
+						
+						<choice label="1 cenário" value='Criação de 1 cenário, com 2 validações e 2 rodadas de ajuste. Pode ser feito baseado em fotos enviadas pelo cliente.'>
+							
+							<subeffort DE="2" WEB="8" PROJETOS="1"/>
+
+							<subdays days="6"/>
+
+						</choice>
+
+						<choice label="2 cenários" value='Criação de até 2 cenários, com 2 validações e 2 rodadas de ajuste. Pode ser feito baseado em fotos enviadas pelo cliente.'>
+							
+							<subeffort DE="2" WEB="10" PROJETOS="1"/>
+
+							<subdays days="6"/>
+
+						</choice>	
+
+						<choice label="3 cenários" value='Criação de até 3 cenários, com 2 validações e 2 rodadas de ajuste. Pode ser feito baseado em fotos enviadas pelo cliente.'>
+							
+							<subeffort DE="2" WEB="12" PROJETOS="1"/>
+
+							<subdays days="8"/>
+
+						</choice>
+
+						<choice label="4 cenários" value='Criação de até 4 cenários, com 2 validações e 2 rodadas de ajuste. Pode ser feito baseado em fotos enviadas pelo cliente.'>
+							
+							<subeffort DE="2" WEB="14" PROJETOS="1"/>
+
+							<subdays days="8"/>
+
+						</choice>
+
+						<choice label="5 cenários" value='Criação de até 5 cenários, com 2 validações e 2 rodadas de ajuste. Pode ser feito baseado em fotos enviadas pelo cliente.'>
+							
+							<subeffort DE="2" WEB="16" PROJETOS="1"/>
+
+							<subdays days="8"/>
+
+						</choice>	
+
+						<choice label="6 cenários" value='Criação de até 6 cenários, com 2 validações e 2 rodadas de ajuste. Pode ser feito baseado em fotos enviadas pelo cliente.'>
+							
+							<subeffort DE="2" WEB="18" PROJETOS="1"/>
+
+							<subdays days="10"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>			
+			
+			<!-- Case ilustrado -->
+			<option 
+				label="Case ilustrado"
+				description='Case ilustrado com 2 personagens em um cenário, com duração de até 2 minutos. Indicado para quando o curso não terá personagens, e quer apenas apresentar um exemplo no meio do conteúdo. Personagens e cenários não serão "criados" para o cliente, e sim disponibilizados conforme banco da SOU, podendo alterar apenas a roupa e acessórios.'>
+
+				<value><![CDATA[Case ilustrado]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Número:">
+						
+						<choice label="1 case" value='1 case ilustrado com 2 personagens em um cenário, com duração de até 2 minutos. Personagens e cenários não serão "criados" para o cliente, e sim disponibilizados conforme banco da SOU, podendo alterar apenas a roupa e acessórios.'>
+							
+							<subeffort DE="8" WEB="16" PROJETOS="1"/>
+
+							<subdays days="3"/>
+
+						</choice>
+
+						<choice label="2 cases" value='2 cases ilustrados com 2 personagens em um cenário, com duração de até 2 minutos (cada). Personagens e cenários não serão "criados" para o cliente, e sim disponibilizados conforme banco da SOU, podendo alterar apenas a roupa e acessórios.'>
+							
+							<subeffort DE="8" WEB="20" PROJETOS="1"/>
+
+							<subdays days="3"/>
+
+						</choice>	
+
+						<choice label="3 cases" value='3 cases ilustrados com 2 personagens em um cenário, com duração de até 2 minutos (cada). Personagens e cenários não serão "criados" para o cliente, e sim disponibilizados conforme banco da SOU, podendo alterar apenas a roupa e acessórios.'>
+							
+							<subeffort DE="10" WEB="24" PROJETOS="1"/>
+
+							<subdays days="4"/>
+
+						</choice>
+
+						<choice label="4 cases" value='4 cases ilustrados com 2 personagens em um cenário, com duração de até 2 minutos (cada). Personagens e cenários não serão "criados" para o cliente, e sim disponibilizados conforme banco da SOU, podendo alterar apenas a roupa e acessórios.'>
+							
+							<subeffort DE="10" WEB="28" PROJETOS="1"/>
+
+							<subdays days="5"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<!-- Avatar -->
+			<option 
+				label="Avatar"
+				description="Criação de até 4  avatares, que ficarão disponibilizados no player.">
+
+				<value><![CDATA[Criação de até 4 avatares, que ficarão disponibilizados no player. 1 validação, 1 rodada de ajuste.]]></value>
+
+				<effort DE="4" WEB="16" PROJETOS="0" />
+
+				<days days="3"/>
+
+			</option>
+
+			<!-- Tabuleiro -->
+			<option 
+				label="Tabuleiro"
+				description="Tabuleiro que simula Learning Map (não selecione as duas funções). Tabuleiro ou mapa do game onde se localizam as fases. Ilustração com cenário e fases com ícones ou flat design. 2 validações, 2 rodadas de ajuste.">
+
+				<value><![CDATA[Tabuleiro ou mapa do game onde se localizam as fases. Ilustração com cenário e fases com ícones ou flat design. 2 validações, 2 rodadas de ajuste.]]></value>
+
+				<effort DE="6" WEB="16" PROJETOS="1" />
+
+				<days days="4"/>
+
+			</option>			
+			
+			<!-- Bônus -->
+			<option 
+				label="Bônus"
+				description='Opção de Bônus de acordo com performance, liberando conteúdos extras (1 tela por bônus) ou permitindo mecânica de dicas.Inclui automaticamente a etapa de GDD (Game Design Document), obrigatório para elaboração de games com mecânica de pontuação.'>
+
+				<value><![CDATA[Bônus]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Número:">
+						
+						<choice label="1 bônus" value='1 bônus: Bônus de acordo com performance, liberando conteúdos extras (uma tela) ou permitindo mecânica de dicas. Antes do storyboard, será realizado o GDD (Game Design Document), obrigatório para elaboração de games com mecânica de pontuação.'>
+							
+							<subeffort DE="24" WEB="12" PROJETOS="1"/>
+
+							<subdays days="7"/>
+
+						</choice>
+
+						<choice label="2 bônus" value='2 bônus: Bônus de acordo com performance, liberando conteúdos extras (2 telas) ou permitindo mecânica de dicas. Antes do storyboard, será realizado o GDD (Game Design Document), obrigatório para elaboração de games com mecânica de pontuação.'>
+							
+							<subeffort DE="24" WEB="16" PROJETOS="1"/>
+
+							<subdays days="7"/>
+
+						</choice>	
+
+						<choice label="3 bônus" value='3 bônus: Bônus de acordo com performance, liberando conteúdos extras (3 telas) ou permitindo mecânica de dicas. Antes do storyboard, será realizado o GDD (Game Design Document), obrigatório para elaboração de games com mecânica de pontuação.'>
+							
+							<subeffort DE="26" WEB="20" PROJETOS="1"/>
+
+							<subdays days="7"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<!-- Pontuação -->
+			<option 
+				label="Pontuação"
+				description="Pontuação disponibilizada no player, de acordo com performance. IMPORTANTE: A pontuação não pode ser transmitida via SCORM, sendo registrado apenas aproveitamento total em porcentagem.">
+
+				<value><![CDATA[Pontuação disponibilizada no player, de acordo com performance. IMPORTANTE: A pontuação não pode ser transmitida via SCORM, sendo registrado apenas aproveitamento total em porcentagem.]]></value>
+
+				<effort DE="24" WEB="8" PROJETOS="1" />
+
+				<days days="6"/>
+
+			</option>
+
+			<!-- Finais alternativos -->
+			<option 
+				label="Finais alternativos"
+				description="3 telas finais com feedbacks diferentes de acordo com pontução (3 telas diferentes sem desenvolvimento de novos personagens ou cenários).">
+
+				<value><![CDATA[3 telas finais com feedbacks diferentes de acordo com pontução (3 telas diferentes sem desenvolvimento de novos personagens ou cenários diferentes dos que o já contratados).]]></value>
+
+				<effort DE="24" WEB="20" PROJETOS="2" />
+
+				<days days="12"/>
+
+			</option>
+
+			<!-- Tradução SOU -->
+			<option 
+				label="Tradução SOU"
+				description="">
+
+				<value><![CDATA[Tradução SOU - <b>ATENÇÃO: A tradução só será iniciada após a finalização do curso em Português, e não contempla alterações de conteúdo. Tradução de textos da tela e legendas não contemplam tradução de imagens e vídeos que sejam inseridos.</b>]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Idioma 1:">
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="2500.00" />
+
+							<subdays days="15"/>
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="2500.00" />
+
+							<subdays days="15"/>
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="3000.00" />
+
+							<subdays days="15"/>
+
+						</choice>
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 2:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="2500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="2500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="3000.00" />
+
+						</choice>
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 3:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="2500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="2500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="24" WEB="30" PROJETOS="4" />
+							<subprice price="3000.00" />
+
+						</choice>
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Locução SOU:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="1 voz" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 1 voz">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="4000.00" />
+
+						</choice>
+
+						<choice label="2 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 2 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="4200.00" />
+
+						</choice>
+
+						<choice label="3 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 3 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="4600.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+						<choice label="4 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 4 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="5000.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+						<choice label="5 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 5 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="5500.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+						<choice label="6 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 6 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="6000.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+			
+			<!-- Tradução enviada pelo cliente -->
+			<option 
+				label="Tradução enviada pelo cliente"
+				description="Tradução de texto do conteúdo será enviada pelo cliente, SOU fará apenas a aplicação.">
+
+				<value><![CDATA[Tradução enviada pelo cliente - SOU enviará o curso printado e cliente fará a tradução do conteúdo, retornando no mesmo arquivo PPT.<br><b>ATENÇÃO: A tradução só será iniciada após a finalização do curso em Português, e não contempla alterações de conteúdo.</b>]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Tipo:">
+						
+						<choice label="Tradução enviada pelo cliente">
+							
+							<subeffort DE="24" WEB="24" PROJETOS="4" />
+
+							<subdays days="15"/>
+
+						</choice>
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Locução SOU:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="1 voz" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 1 voz">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="4000.00" />
+
+						</choice>
+
+						<choice label="2 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 2 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="4200.00" />
+
+						</choice>
+
+						<choice label="3 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 3 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="4600.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+						<choice label="4 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 4 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="5000.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+						<choice label="5 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 5 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="5500.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+						<choice label="6 vozes" valeu="Locução dos áudios para 1 idioma comum (inglês ou espanhol) - 6 vozes">
+							
+							<subeffort DE="4" WEB="0" PROJETOS="0" />
+							<subprice price="6000.00" />
+
+							<subdays days="3"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<!-- Há necessidade de criar algo novo -->
+			<option 
+				label="Há necessidade de criar algo novo (exemplo: animação 3d, exercício diferente, calculadora, banco de dados)?"
+				description="Se habilitar esse campo, o gerente deve ser consultado. Não será possível gerar a proposta neste momento.">
+
+				<value><![CDATA[Há necessidade de criar algo novo]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+		</options>
+
+	</section>
+
+<!-- -->
+
+	<!-- <section id="Produção">
+		
+		<question 
+			question="Produção"
+			description="Selecione as opções sobre a ferramenta usada para desendolver o treinamento."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Próxima etapa"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Exercícios"
+				description="">
+
+				<value><![CDATA[Exercícios]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Complexidade:">
+						
+						<choice label="Nivel 1 (Akira e Storyline)">
+							
+							<subeffort DE="1" WEB="4" PROJETOS="0"/>
+
+						</choice>
+
+						<choice label="Nivel 2 (Akira, não gamificados)">
+							
+							<subeffort DE="1" WEB="7" PROJETOS="0"/>
+
+						</choice>	
+
+						<choice label="Nivel 3 (Akira, gamificados)">
+							
+							<subeffort DE="1" WEB="11" PROJETOS="0"/>
+
+						</choice>
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				label="Sonorização / Locução"
+				description="">
+
+				<value><![CDATA[Sonorização / Locução]]></value>
+
+				<price price="1000.00" />
+
+			</option>
+
+			<option 
+				label="Material para download"
+				description="Material que será enviado pelo cliente para download. Exp.: Manual de conduta.">
+
+				<value><![CDATA[Material para download]]></value>
+
+				<effort DE="0" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Compra em banco de imagens"
+				description="">
+
+				<value><![CDATA[Compra em banco de imagens]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Metáfora/storytelling"
+				description="">
+
+				<value><![CDATA[Metáfora/storytelling]]></value>
+
+				<effort DE="8" WEB="16" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Avaliação randômica (mais de 10 questões)."
+				description="">
+
+				<value><![CDATA[Avaliação randômica (mais de 10 questões).]]></value>
+
+				<effort DE="4" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Acessibilidade"
+				description="versão para pessoas com deficiência visual ou auditiva">
+
+				<value><![CDATA[Acessibilidade]]></value>
+
+				<effort DE="16" WEB="24" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Certificado"
+				description="">
+
+				<value><![CDATA[Certificado]]></value>
+
+				<effort DE="0" WEB="1" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Roteiro com árvore de decisão"
+				description="">
+
+				<value><![CDATA[Roteiro com árvore de decisão]]></value>
+
+				<effort DE="16" WEB="16" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Simulador"
+				description="Navegação pelo sistema (tela animada, não pode ter maquiagem no sistema)">
+
+				<value><![CDATA[Simulador]]></value>
+
+				<effort DE="4" WEB="12" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Captura de Tela"
+				description="Print da tela do sistema (tela estática, pode ter maquiagem de informações)">
+
+				<value><![CDATA[Captura de Tela]]></value>
+
+				<effort DE="4" WEB="8" PROJETOS="0" />
+
+			</option>
+
+			<option 
+				label="Tradução"
+				description="">
+
+				<value><![CDATA[Tradução]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Idioma 1:">
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 2:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+					<suboption 
+						type="Select"
+						label="Idioma 3:">
+
+						<choice label="Selecionar">
+							
+						</choice>
+						
+						<choice label="Inglês">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Espanhol">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+						<choice label="Outro">
+							
+							<subeffort DE="16" WEB="20" PROJETOS="0" />
+							<subprice price="3500.00" />
+
+						</choice>
+
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+			<option 
+				label="Há necessidade de criar algo novo"
+				description="Se habilitar esse campo, o gerente deve ser consultado">
+
+				<value><![CDATA[Há necessidade de criar algo novo]]></value>
+
+				<effort DE="0" WEB="0" PROJETOS="0" />
+
+			</option>
+
+		</options>
+
+	</section> -->
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+	<!-- <section id="Teste">
+	
+		<question 
+			question="Teste"
+			description="Teste."
+			typeInput="Checkbox"
+		/> 
+
+		<button
+			name="Concluir"
+			action="goNextSection"
+		/>
+
+		<options>
+
+			<option 
+				label="Teste"
+				description="">
+
+				<value><![CDATA[Teste]]></value>
+
+				<suboptions>
+
+					<suboption 
+						type="Select"
+						label="Número de visitas:">
+						
+						<choice label="1 reuniões presenciais">
+							
+							<subprice price="100.00"/>
+							<subeffort DE="1" WEB="0" PROJETOS="0" />
+
+						</choice>
+
+						<choice label="2 reuniões presenciais">
+							
+							<subprice price="200.00"/>
+							<subeffort DE="1" WEB="0" PROJETOS="0" />
+
+						</choice>				
+
+					</suboption>
+
+				</suboptions>
+
+			</option>
+
+		</options>
+
+	</section>
+ -->
+
+</root>

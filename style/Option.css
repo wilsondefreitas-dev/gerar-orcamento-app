@@ -1,0 +1,29 @@
+.Option{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	border-style: solid;
+	border-width: 0.1px 0px 0px 0px;
+	border-color: #d4d4d6;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.OptionLabel{
+	padding: 15px;
+	width: 90%;
+	border-style: solid;
+	border-width: 0px 0px 0px 0.1px;
+	border-color: #e3e4ea;
+	font-weight: bold;
+	color: #6d6c6c;
+	cursor: pointer;
+	line-height: 150%;
+}
+
+.OptionLabel .Description{
+	font-weight: normal;
+	line-height: 140%;
+}
